@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="cs">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f8f5ef">
+  <meta name="description" content="MOU. — moderní cukrářský ateliér. Autorská cukrárna s originálními dezerty, dorty na míru a nečekanými chutěmi. Designový DEMO projekt.">
+  <meta property="og:title" content="MOU. — cukrářský ateliér | DEMO">
+  <meta property="og:description" content="Malé radosti. Velké emoce. Ukázkový koncept moderní cukrárny.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/images/atelier-dort.webp">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="assets/images/pistaciovy-dort.webp" as="image">
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
+  <title>MOU. — cukrářský ateliér · DEMO</title>
+</head>
+<body>
+  <div class="site-progress" aria-hidden="true" id="siteProgress"></div>
+  <div class="ambient-cursor" id="ambientCursor" aria-hidden="true"></div>
+  <a href="#obsah" class="skip-link">Přeskočit na obsah</a>
+  <div class="demo-ribbon"><span class="dot"></span> DESIGNOVÝ DEMO KONCEPT <span class="ribbon-sep"></span> Fiktivní cukrárna, ukázkové ceny a nezávazné formuláře <span class="ribbon-star">✳</span></div>
+  <header class="site-header" id="siteHeader">
+    <nav class="nav shell" aria-label="Hlavní navigace">
+      <a href="#uvod" class="brand" aria-label="MOU. — na úvod"><span class="brand-mark">mou<span>.</span></span><span class="brand-type">CUKRÁŘSKÝ<br>ATELIÉR</span></a>
+      <div class="nav-links" id="navLinks">
+        <a href="#produkty">Dezerty</a>
+        <a href="#pribeh">Náš přístup</a>
+        <a href="#tvorba">Dort na míru</a>
+        <a href="#galerie">Galerie</a>
+        <a href="#faq">FAQ</a>
+      </div>
+      <div class="nav-actions">
+        <button class="cart-trigger" id="cartTrigger" type="button" aria-label="Otevřít košík"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 5h2l2.3 11.5h10.4L20 8H6"></path><circle cx="9" cy="20" r="1"></circle><circle cx="17" cy="20" r="1"></circle></svg><span class="cart-label">Můj výběr</span><span class="cart-count" id="cartCount">0</span></button>
+        <button type="button" class="menu-toggle" id="menuToggle" aria-controls="navLinks" aria-expanded="false" aria-label="Otevřít menu"><span></span><span></span></button>
+      </div>
+    </nav>
+  </header>
+
+  <main id="obsah">
+    <section class="hero" id="uvod">
+      <div class="hero-grid shell">
+        <div class="hero-copy">
+          <div class="eyebrow hero-eyebrow"><span class="eyebrow-line"></span> NOVÁ CHUŤ SLADKÉHO SVĚTA <span class="tiny-star">✳</span></div>
+          <h1 class="hero-title"><span class="line-reveal">Malé</span><span class="line-reveal">radosti<span class="punctuation">.</span></span><span class="line-reveal italic-line">Velké <em>emoce.</em></span></h1>
+          <p class="hero-description">Cukrárna budoucnosti s duší malé řemeslné dílny. Hravé kombinace, krásné detaily a sladkosti, na které se nezapomíná.</p>
+          <div class="hero-buttons"><a class="btn btn-dark magnetic" href="#produkty">Prozkoumat dezerty <span class="arrow-up">↗</span></a><a class="text-link" href="#tvorba">Vytvořit vlastní dort <span>↗</span></a></div>
+          <div class="hero-foot"><span class="hero-foot-dot"></span><span>Vymyšleno s chutí.</span><span class="hero-foot-separator"></span><span>Navrženo s láskou k detailu.</span></div>
+        </div>
+        <div class="hero-art" aria-label="Fotografie slavnostního dortu">
+          <div class="hero-orbit" aria-hidden="true"></div>
+          <div class="hero-photo-frame"><img src="assets/images/pistaciovy-dort.webp" width="410" height="410" alt="Pistáciový dort s malinami a jemným krémem" fetchpriority="high"></div>
+          <div class="hero-sticker" aria-hidden="true"><span>DEZERTY</span><span class="sticker-symbol">✳</span><span>JINAK</span></div>
+          <div class="hero-mini"><img src="assets/images/pistaciove-makronky.webp" alt="Pistáciové makronky" width="410" height="410"><div><small>POZNAT NOVÉ CHUTĚ</small><strong>Ještě jeden kousek?</strong></div><span>↗</span></div>
+          <div class="hero-side-note" aria-hidden="true">DESSERT CULTURE / EST. IMAGINARY 2030</div>
+        </div>
+      </div>
+      <div class="hero-bottom shell"><span>01 / CUKRÁŘSKÉ POTĚŠENÍ</span><a href="#produkty" class="scroll-discover">SCROLL TO DISCOVER <span>↓</span></a></div>
+    </section>
+
+    <div class="marquee" aria-label="Naše speciality"><div class="marquee-track" aria-hidden="true"><span>SLADKÉ NENÍ NUDA</span><b>✳</b><span>HANDMADE IN OUR IMAGINATION</span><b>✳</b><span>ONE MORE BITE</span><b>✳</b><span>SLADKÉ NENÍ NUDA</span><b>✳</b><span>HANDMADE IN OUR IMAGINATION</span><b>✳</b><span>ONE MORE BITE</span><b>✳</b></div></div>
+
+    <section class="bestsellers section-spacing" id="favoriti">
+      <div class="shell">
+        <div class="section-top" data-reveal><div><div class="eyebrow"><span class="eyebrow-line"></span> NEJOBLÍBENĚJŠÍ KOUSKY / 01</div><h2>Miláčci <em>vitríny.</em></h2></div><div class="section-top-aside">Na pohled malá radost. Na chuť velký zážitek.<br>Naše imaginární bestsellery čekají na výběr.<a href="#produkty" class="text-link">Celá nabídka <span>↗</span></a></div></div>
+        <div class="featured-grid" id="featuredGrid" aria-live="polite"></div>
+        <div class="products-foot" data-reveal><span>01 — 06 / VYBRÁNO S CITEM</span><span>Každý dezert má svůj charakter.</span></div>
+      </div>
+    </section>
+
+    <section class="story-band" id="pribeh">
+      <div class="story-image-stack"><div class="story-image one" data-reveal><img src="assets/images/jahodova-tartaletka.webp" alt="Jahodová tartaletka s krémem a květinami" loading="lazy"></div><div class="story-image two" data-reveal><img src="assets/images/maslove-croissanty.webp" alt="Čerstvě upečené croissanty a čokoládové pečivo" loading="lazy"></div><span class="story-floating-label" aria-hidden="true">SOFT<br>IS THE<br>NEW BOLD.</span></div>
+      <div class="story-text"><div class="story-content" data-reveal><div class="eyebrow"><span class="eyebrow-line"></span> FILOZOFIE MOU. / 02</div><h2>Nejen něco sladkého. <em>Něco, co si zapamatuješ.</em></h2><p>Dobrá cukrárna nemusí vypadat jako každá druhá. Hrajeme si s kontrasty, kombinujeme jemnost s odvahou a věříme, že i malý dezert může být malým uměleckým dílem.</p><div class="story-highlights"><span><b>01</b> Nadčasový design</span><span><b>02</b> Fantazie bez limitů</span><span><b>03</b> Radost z detailů</span></div><a class="btn btn-cream" href="#galerie">Podívat se blíž <span>↗</span></a></div></div>
+    </section>
+
+    <section class="catalog section-spacing" id="produkty">
+      <div class="shell">
+        <div class="section-top" data-reveal><div><div class="eyebrow"><span class="eyebrow-line"></span> NABÍDKA & CENÍK / 03</div><h2>Vyber si svou <em>slabost.</em></h2></div><div class="section-top-aside">20 autorských nápadů. Nekonečno důvodů udělat si radost.<br><strong>Ceny jsou orientační — pouze pro demo.</strong></div></div>
+        <div class="catalog-toolbar"><div class="filter-row" id="filterRow" role="group" aria-label="Filtrovat nabídku"><button class="filter active" data-category="all" type="button" aria-pressed="true">Všechno <span>20</span></button><button class="filter" data-category="dorty" type="button" aria-pressed="false">Dorty</button><button class="filter" data-category="tartaletky" type="button" aria-pressed="false">Tartaletky</button><button class="filter" data-category="makronky" type="button" aria-pressed="false">Makronky</button><button class="filter" data-category="pecivo" type="button" aria-pressed="false">Pečivo</button><button class="filter" data-category="dezerty" type="button" aria-pressed="false">Dezerty</button></div><div class="catalog-count" id="catalogCount">ZOBRAZENO 8 Z 20</div></div>
+        <div class="catalog-grid" id="catalogGrid" aria-live="polite"></div>
+        <div class="catalog-footer"><button class="btn btn-outline-dark" type="button" id="showMoreBtn">Zobrazit všech 20 dezertů <span>↘</span></button><span>* Ukázkový ceník. Výrobky a dostupnost jsou součástí fiktivního konceptu.</span></div>
+      </div>
+    </section>
+
+    <section class="ticker-quote"><div class="shell"><div class="quote-star" aria-hidden="true">✳</div><p>Life is too short for <em>boring desserts.</em></p><span>THIS IS MOU.</span></div></section>
+
+    <section class="cake-builder section-spacing" id="tvorba">
+      <div class="shell">
+        <div class="section-top" data-reveal><div><div class="eyebrow"><span class="eyebrow-line"></span> NĚCO JEN PRO TEBE / 04</div><h2>Tvůj dort. <em>Tvá pravidla.</em></h2></div><div class="section-top-aside">Naklikej svůj vysněný dort. Cenu uvidíš hned — bez čekání.<br>Jde o interaktivní demo konfigurátoru.</div></div>
+        <div class="builder-layout" data-reveal>
+          <div class="builder-showcase"><div class="builder-halo" aria-hidden="true"></div><img id="builderImage" src="assets/images/ruzovy-slavnostni-dort.webp" width="445" height="405" loading="lazy" alt="Dort na míru s malinami a květinami"><span class="builder-orbit-text">MADE FOR YOUR MOMENT · MADE FOR YOUR MOMENT · </span><div class="builder-caption"><span>TVŮJ VLASTNÍ ORIGINÁL</span><strong>Made to celebrate.</strong></div></div>
+          <div class="builder-controls"><div class="builder-head"><span>STUDIO / CUSTOM CAKE</span><span>01 — 03</span></div><h3>Tak jaký bude?</h3><fieldset><legend><span>01</span> Velikost dortu</legend><div class="option-grid" id="sizeOptions"><button type="button" class="choice active" data-size="small" aria-pressed="true"><b>Mini</b><small>4–6 porcí</small><strong>790 Kč</strong></button><button type="button" class="choice" data-size="medium" aria-pressed="false"><b>Klasik</b><small>8–10 porcí</small><strong>1 190 Kč</strong></button><button type="button" class="choice" data-size="large" aria-pressed="false"><b>Oslava</b><small>12–16 porcí</small><strong>1 690 Kč</strong></button></div></fieldset>
+            <fieldset><legend><span>02</span> Hlavní příchuť</legend><div class="pill-options" id="flavorOptions"><button type="button" data-flavor="vanilka" class="pill-choice active" aria-pressed="true">Vanilka & jahoda</button><button type="button" data-flavor="pistacie" class="pill-choice" aria-pressed="false">Pistácie <small>+ 120 Kč</small></button><button type="button" data-flavor="cokolada" class="pill-choice" aria-pressed="false">Čokoláda <small>+ 90 Kč</small></button></div></fieldset>
+            <fieldset><legend><span>03</span> Extra detail</legend><div class="pill-options" id="extraOptions"><button type="button" data-extra="none" class="pill-choice active" aria-pressed="true">Jen čistá krása</button><button type="button" data-extra="flowers" class="pill-choice" aria-pressed="false">Jedlé květy <small>+ 150 Kč</small></button><button type="button" data-extra="text" class="pill-choice" aria-pressed="false">Nápis <small>+ 100 Kč</small></button></div></fieldset>
+            <div class="builder-total"><div><span>ORIENTAČNÍ CENA</span><strong id="builderPrice">790 Kč</strong></div><button class="btn btn-dark" type="button" id="addCustomCake">Přidat do výběru <span>↗</span></button></div><p class="builder-disclaimer">* Pouze ukázková konfigurace. Volba neslouží jako skutečná objednávka.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="gallery-section section-spacing" id="galerie"><div class="shell"><div class="section-top" data-reveal><div><div class="eyebrow"><span class="eyebrow-line"></span> SLADKÝ LOOKBOOK / 05</div><h2>Oči jedí <em>první.</em></h2></div><div class="section-top-aside">Detail, textura, světlo. Naše malá galerie velkých chutí.<br>Fotografie jsou vytvořené pro tento demo koncept.</div></div><div class="gallery-header"><span>21 OBRÁZKŮ VE WEBU</span><span>KLIKNI PRO ZVĚTŠENÍ ↗</span></div><div class="gallery-grid" id="galleryGrid"></div></div></section>
+
+    <section class="experience" id="zazitek"><div class="experience-photo"><img src="assets/images/interier-atelieru.webp" loading="lazy" width="400" height="260" alt="Inspirativní vizualizace interiéru moderní cukrárny"></div><div class="experience-copy"><div data-reveal><div class="eyebrow"><span class="eyebrow-line"></span> EXPERIENCE / 06</div><h2>Vizuální svět, který <em>chutná.</em></h2><p>MOU. je fiktivní cukrárna vytvořená jako interaktivní designová ukázka. Má všechno, co moderní značka potřebuje: náladu, příběh i jednoduchou cestu k nabídce.</p><a href="#kontakt" class="btn btn-cream">Prozkoumat koncept <span>↗</span></a></div></div></section>
+
+    <section class="faq-section section-spacing" id="faq"><div class="shell faq-layout"><div data-reveal><div class="eyebrow"><span class="eyebrow-line"></span> OTÁZKY & ODPOVĚDI / 07</div><h2>Ještě něco <em>sladkého?</em></h2><p>Všechno podstatné na jednom místě. A bez zbytečných drobků.</p><a href="#kontakt" class="text-link">O projektu <span>↗</span></a></div><div class="faq-items" id="faqItems"><details><summary>Je MOU. skutečná cukrárna? <span>+</span></summary><div>Ne. MOU. je fiktivní značka a designový demo projekt vytvořený jako ukázka moderního webu pro cukrárnu. Na této stránce nelze skutečně nakoupit.</div></details><details><summary>Mohu přes stránku objednat dort? <span>+</span></summary><div>Vyzkoušej si výběr dezertů i konfigurátor dortu. Sestavený výběr můžeš zkopírovat, ale žádná objednávka se neodesílá ani neplatí.</div></details><details><summary>Jsou uvedené ceny platné? <span>+</span></summary><div>Ne, všechny ceny v Kč jsou ilustrativní. U skutečné cukrárny by se ceník, dostupnost i alergeny nastavily podle reálné nabídky.</div></details><details><summary>Jak bych získal podobný web? <span>+</span></summary><div>Tato stránka je ukázkou možností interaktivního webového designu. Reálný web by se přizpůsobil značce, produktům, fotkám a objednávkovému procesu konkrétního podniku.</div></details></div></div></section>
+
+    <section class="contact-section" id="kontakt"><div class="contact-shell shell"><div class="contact-heading" data-reveal><span class="eyebrow"><span class="eyebrow-line"></span> FINÁLNÍ TEČKA / 08</span><h2>Sladký nápad<br><em>začíná tady.</em></h2><p>Moderní web nemusí být jen hezký obrázek. Tohle je koncept, se kterým si můžeš opravdu pohrát.</p><div class="contact-actions"><button type="button" class="btn btn-dark" id="contactCartBtn">Otevřít můj výběr <span>↗</span></button><a href="#uvod" class="btn btn-outline-dark">Zpátky na začátek <span>↑</span></a></div></div><div class="contact-art" aria-hidden="true"><img src="assets/images/jahodova-pavlova.webp" width="410" height="410" loading="lazy" alt=""><div class="contact-disc">MOU.<span>GOOD THINGS<br>ARE COMING</span></div></div></div><div class="contact-bottom shell"><span>DEMO PROJEKT — NEJEDNÁ SE O SKUTEČNOU CUKRÁRNU</span><span>MADE WITH A LITTLE EXTRA LOVE.</span></div></section>
+  </main>
+
+  <footer class="footer"><div class="shell footer-content"><a class="brand footer-brand" href="#uvod"><span class="brand-mark">mou<span>.</span></span><span class="brand-type">CUKRÁŘSKÝ<br>ATELIÉR</span></a><div class="footer-right"><span>© 2030 MOU. / DESIGNOVÝ KONCEPT</span><a href="#uvod">NAHORU ↑</a></div></div></footer>
+
+  <div class="drawer-backdrop" id="drawerBackdrop" hidden></div>
+  <aside class="cart-drawer" id="cartDrawer" role="dialog" aria-modal="true" aria-labelledby="drawerTitle" aria-hidden="true" tabindex="-1"><div class="drawer-head"><div><span>MAISON MOU. / TVŮJ VÝBĚR</span><h2 id="drawerTitle">Sladký výběr<span>.</span></h2></div><button type="button" class="icon-button" id="closeDrawer" aria-label="Zavřít košík">✕</button></div><div class="drawer-items" id="drawerItems"></div><div class="drawer-foot"><div class="drawer-total"><span>CELKEM / DEMO</span><strong id="drawerPrice">0 Kč</strong></div><button type="button" class="btn btn-dark drawer-checkout" id="prepareInquiry">Připravit přehled výběru <span>↗</span></button><small>Ukázkový košík. Nic se neobjednává ani neplatí.</small></div></aside>
+
+  <div class="modal-overlay" id="imageModal" hidden role="dialog" aria-modal="true" aria-label="Zvětšená fotografie galerie" tabindex="-1"><button type="button" class="modal-close icon-button" id="closeImageModal" aria-label="Zavřít obrázek">✕</button><button type="button" class="modal-prev modal-switch" id="imagePrev" aria-label="Předchozí fotografie">←</button><figure><img id="modalImage" alt=""><figcaption><span id="modalCaption"></span><span id="modalPosition"></span></figcaption></figure><button type="button" class="modal-next modal-switch" id="imageNext" aria-label="Další fotografie">→</button></div>
+  <div class="modal-overlay inquiry-overlay" id="inquiryModal" hidden role="dialog" aria-modal="true" aria-labelledby="inquiryTitle" tabindex="-1"><div class="inquiry-box"><button type="button" class="modal-close icon-button" id="closeInquiry" aria-label="Zavřít přehled">✕</button><span class="eyebrow">PŘIPRAVENO JEN PRO TEBE</span><h2 id="inquiryTitle">Tvoje sladké <em>shrnutí.</em></h2><p>Tohle je jen ukázka výsledku. Můžeš text zkopírovat, ale nic se automaticky neodesílá.</p><textarea id="inquiryText" rows="9" readonly aria-label="Text poptávky"></textarea><button class="btn btn-dark" type="button" id="copyInquiry">Zkopírovat shrnutí <span>↗</span></button></div></div>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
